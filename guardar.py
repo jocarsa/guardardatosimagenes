@@ -9,7 +9,11 @@ pixeles = imagen.load()
 cadena = "Hola que tal como estais"
 contador = 0
 for caracter in cadena:
-    print(caracter)
+    print(ord(caracter))
+    pixeles[contador,0] = (ord(caracter),0,0)
+    contador += 1
+
+imagen.save("imagen2.png")
 
 
 
